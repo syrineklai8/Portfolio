@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Syrine Klai | Ingénieure en informatique, Génie logiciel & IA</title>
-  <meta name="description" content="Portfolio de Syrine Klai, ingénieure en informatique junior spécialisée en génie logiciel et IA (AIOps, RAG, full-stack).">
+  <meta name="description" content="Portfolio de Syrine Klai, ingénieure en informatique junior spécialisée en génie logiciel et IA (AIOps, RAG, Machine Learning, full-stack).">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,15 +22,20 @@
 
     <!-- HERO -->
     <section class="hero">
-      <p class="hello">Bonjour, je suis</p>
-      <h1>Syrine Klai</h1>
-      <p class="subtitle">
-        Ingénieure en informatique junior, Génie logiciel | IA.<br>
-        Je conçois des solutions complètes, évolutives et maintenables.
-      </p>
-      <div class="cta">
-        <a class="btn primary" href="#projects">Voir mes projets</a>
-        <a class="btn" href="CV_SYRINE_KLAI_2026.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
+      <div class="hero-text">
+        <p class="hello">Bonjour, je suis</p>
+        <h1>Syrine Klai</h1>
+        <p class="subtitle">
+          Ingénieure en informatique junior, Génie logiciel | IA.<br>
+          Je conçois des solutions complètes, évolutives et maintenables, de l'interface jusqu'au modèle.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">Voir mes projets</a>
+          <a class="btn" href="CV_SYRINE_KLAI_2026.pdf" target="_blank" rel="noopener">Télécharger mon CV</a>
+        </div>
+      </div>
+      <div class="avatar">
+        <img src="capture/profile.png" alt="Portrait de Syrine Klai">
       </div>
     </section>
 
@@ -40,20 +45,24 @@
       <div class="about-grid">
         <div>
           <p>
-            Ingénieure en informatique diplômée d'<strong>ESPRIT</strong>,
-            spécialisée en génie logiciel avec une forte orientation vers
-            l'intelligence artificielle.
+            Récemment diplômée du cycle ingénieur en informatique, option
+            <strong>génie logiciel</strong>, à <strong>ESPRIT</strong>, je termine
+            mon parcours avec une forte orientation vers
+            <strong>l'intelligence artificielle</strong>.
           </p>
           <p>
-            Mon profil est polyvalent : conception logicielle, développement
-            full-stack, Machine Learning et AIOps, avec une expérience pratique
-            des environnements DevOps et de l'automatisation.
+            Mon profil est polyvalent : je développe en <strong>full-stack</strong>
+            (Angular, Spring Boot, Flask) et je travaille le
+            <strong>Machine Learning</strong>, du NLP aux architectures RAG/LLM.
+            J'aime relier les deux mondes : construire des produits complets
+            dont l'IA est un vrai composant, pas un simple gadget.
           </p>
           <p>
-            J'ai conçu <strong>OpsAI</strong> lors de mon stage de fin d'études :
-            une plateforme AIOps d'analyse et d'assistance à la résolution
-            d'incidents CI/CD. Je cherche un premier poste où continuer à
-            construire des produits utiles, de l'interface à l'IA.
+            J'ai mené trois stages (AIOps, full-stack/IA, analyse de données) et
+            plusieurs projets académiques, avec une pratique concrète du
+            <strong>DevOps</strong> et de l'automatisation (Docker, Jenkins, n8n,
+            Kubernetes). Je cherche un premier poste où continuer à apprendre
+            vite et livrer des solutions utiles, en génie logiciel ou en IA.
           </p>
         </div>
 
@@ -99,95 +108,213 @@
     <!-- PROJECTS -->
     <section id="projects" class="section">
       <h2>Projets</h2>
-      <div class="projects">
 
-        <article class="project">
-          <img src="images/opsai-1.png" alt="Capture d'écran d'OpsAI" loading="lazy">
-          <div class="project-body">
-            <h3>OpsAI</h3>
-            <p class="role">Stage de fin d'études | Iliade Consulting Tunisie | 2026</p>
-            <p>
-              Plateforme AIOps intelligente dédiée à l'analyse et à
-              l'assistance à la résolution des incidents CI/CD. Automatisation
-              du diagnostic, de l'identification des causes jusqu'à la
-              génération de recommandations de correction contextualisées.
-            </p>
-            <p>
-              Mécanisme d'amélioration continue basé sur le RAG, qui capitalise
-              les résolutions validées pour enrichir les recommandations sur
-              des incidents similaires.
-            </p>
-            <ul class="tags">
-              <li>Python</li><li>Spring Boot</li><li>Angular</li><li>RAG/LLM</li>
-              <li>Jenkins</li><li>n8n</li><li>Docker</li><li>Kubernetes</li><li>MySQL</li>
-            </ul>
-          </div>
-        </article>
+      <!-- ======== OPSAI ======== -->
+      <article class="project">
+        <div class="project-head">
+          <h3>OpsAI : plateforme AIOps d'analyse d'incidents CI/CD</h3>
+          <p class="role">Stage de fin d'études | Iliade Consulting Tunisie | Fév – Juil. 2026</p>
+        </div>
 
-        <article class="project">
-          <img src="images/inveepfood-1.png" alt="Capture d'écran d'InveepFood" loading="lazy">
-          <div class="project-body">
-            <h3>InveepFood</h3>
-            <p class="role">Stage d'ingénieur Full-Stack / IA | Inveep | 2025</p>
-            <p>
-              Plateforme web intelligente de gestion de restaurant intégrant
-              l'automatisation des opérations métier et un module d'IA
-              générative pour la recommandation personnalisée de recettes.
-            </p>
-            <ul class="tags">
-              <li>Spring Boot</li><li>Angular</li><li>Python</li><li>Flask</li>
-              <li>MongoDB</li><li>Docker</li><li>Jira</li>
-            </ul>
-          </div>
-        </article>
+        <div class="project-body">
+          <p>
+            Quand un pipeline CI/CD échoue, les équipes DevOps perdent un temps
+            précieux à lire des logs, trouver la cause puis la corriger.
+            <strong>OpsAI</strong> automatise ce parcours de bout en bout :
+            analyse des logs d'échec, classification de l'incident,
+            identification de la cause racine et génération de recommandations
+            de correction contextualisées.
+          </p>
 
-        <article class="project">
-          <img src="images/speedygo-1.png" alt="Capture d'écran de SpeedyGo" loading="lazy">
-          <div class="project-body">
-            <h3>SpeedyGo</h3>
-            <p class="role">Projet académique | ESPRIT | 2025</p>
-            <p>
-              Plateforme de mobilité en architecture microservices, qui
-              centralise livraison, transport et covoiturage avec géolocalisation
-              et suivi des trajets. Fonctionnalités intelligentes pour
-              l'optimisation des itinéraires et des tarifs, et analyse
-              automatisée des retours utilisateurs.
-            </p>
-            <ul class="tags">
-              <li>Spring Boot</li><li>Angular</li><li>Flask</li><li>MySQL</li>
-              <li>Keycloak</li><li>Jenkins</li><li>Docker</li>
-            </ul>
-          </div>
-        </article>
+          <ul class="stats">
+            <li><strong>Microservices</strong> Angular, Spring Boot, services IA Flask</li>
+            <li><strong>3 modèles ML</strong> comparés sur les logs CI/CD</li>
+            <li><strong>RAG + LLM</strong> ChromaDB et Groq</li>
+            <li><strong>Automatisation</strong> Jenkins, n8n, Jira</li>
+          </ul>
 
-        <article class="project">
-          <img src="images/wellbeing-1.png" alt="Capture d'écran de l'application bien-être" loading="lazy">
-          <div class="project-body">
-            <h3>Assistant bien-être intelligent</h3>
-            <p class="role">Application mobile Flutter | ESPRIT | 2025</p>
-            <p>
-              Application de fitness et de bien-être basée sur l'IA : conseils
-              personnalisés générés avec l'API Gemini selon le profil de santé
-              de chaque utilisateur, suggestions de recettes automatisées et
-              suivi du mode de vie.
-            </p>
-            <ul class="tags">
-              <li>FlutterFlow</li><li>Gemini API</li><li>Firebase</li>
-            </ul>
-          </div>
-        </article>
+          <h4>Complexité technique</h4>
+          <ul class="points">
+            <li>
+              <strong>Architecture microservices en couches</strong> : frontend
+              Angular, backend Spring Boot structuré en couches logiques avec
+              une dizaine de contrôleurs (incidents, RAG, feedback, Jira), et
+              services d'IA Flask dédiés.
+            </li>
+            <li>
+              <strong>Orchestration et intégrations</strong> : workflows n8n,
+              déclenchement et analyse des pipelines Jenkins, création et suivi
+              de tickets Jira via l'API REST Atlassian.
+            </li>
+            <li>
+              <strong>Pipeline Machine Learning</strong> : classification des
+              logs CI/CD par type d'incident. J'ai comparé trois approches
+              (Régression Logistique + TF-IDF, DistilBERT fine-tuné,
+              TF-IDF + LinearSVC) et retenu <strong>TF-IDF + LinearSVC</strong> :
+              le modèle Transformer sous-performait sur un jeu de données
+              réduit et déséquilibré. Un choix argumenté plutôt que le modèle
+              le plus à la mode.
+            </li>
+            <li>
+              <strong>Amélioration continue par RAG</strong> : les résolutions
+              validées par les ingénieurs sont indexées dans une base vectorielle
+              (ChromaDB) et réutilisées pour enrichir les recommandations sur
+              des incidents similaires, via un LLM (Groq). Plus la plateforme
+              est utilisée, plus ses réponses gagnent en pertinence.
+            </li>
+            <li>
+              <strong>Esprit critique sur l'IA</strong> : réflexion sur la
+              validité du jeu de données, la représentation des classes, la
+              méthode de validation croisée et le choix des seuils de
+              similarité du RAG.
+            </li>
+          </ul>
 
-      </div>
+          <ul class="tags">
+            <li>Python</li><li>Flask</li><li>Spring Boot</li><li>Angular</li>
+            <li>Machine Learning</li><li>scikit-learn</li><li>NLP</li>
+            <li>RAG / LLM</li><li>ChromaDB</li><li>Groq</li><li>Jenkins</li>
+            <li>n8n</li><li>Jira</li><li>Docker</li><li>Kubernetes</li><li>MySQL</li>
+          </ul>
+        </div>
+
+        <div class="gallery">
+          <img src="capture/AIOps/landing_page_new.png" alt="OpsAI : page d'accueil" data-caption="OpsAI : page d'accueil" loading="lazy">
+          <img src="capture/AIOps/loginPagev1.png" alt="OpsAI : authentification" data-caption="OpsAI : page d'authentification" loading="lazy">
+          <img src="capture/AIOps/Dashbord_Int_new.png" alt="OpsAI : tableau de bord" data-caption="OpsAI : tableau de bord" loading="lazy">
+          <img src="capture/AIOps/Incident_int2_new.png" alt="OpsAI : incident (1)" data-caption="OpsAI : analyse d'incident (1)" loading="lazy">
+          <img src="capture/AIOps/Incident_int3_new.png" alt="OpsAI : incident (2)" data-caption="OpsAI : analyse d'incident (2)" loading="lazy">
+          <img src="capture/AIOps/Incident_int5_branch_error_new.png" alt="OpsAI : incident erreur de branche" data-caption="OpsAI : incident lié à une erreur de branche" loading="lazy">
+        </div>
+      </article>
+
+      <!-- ======== INVEEPFOOD ======== -->
+      <article class="project">
+        <div class="project-head">
+          <h3>InveepFood : plateforme intelligente de gestion de restaurant</h3>
+          <p class="role">Stage d'ingénieur Full-Stack / IA | Inveep | Juin – Août 2025</p>
+        </div>
+
+        <div class="project-body">
+          <p>
+            <strong>InveepFood</strong> est une application web qui digitalise
+            le fonctionnement d'un restaurant, avec des interfaces dédiées à
+            chaque acteur : le <strong>client</strong>, le <strong>serveur</strong>
+            et le <strong>manager</strong>. Elle automatise les opérations
+            métier (tables, commandes, suivi) et intègre un module d'IA
+            générative qui recommande des recettes personnalisées.
+          </p>
+
+          <h4>Ce que j'ai réalisé</h4>
+          <ul class="points">
+            <li>
+              <strong>Application full-stack multi-rôles</strong> : frontend
+              Angular, API Spring Boot et persistance MongoDB, avec des
+              parcours distincts selon le profil de l'utilisateur.
+            </li>
+            <li>
+              <strong>Module d'IA générative</strong> : service Python/Flask qui
+              génère des recommandations de recettes personnalisées, intégré à
+              la plateforme.
+            </li>
+            <li>
+              <strong>Automatisation des opérations métier</strong> : gestion des
+              tables côté manager, prise de commande côté serveur, expérience
+              fluide côté client.
+            </li>
+            <li>
+              <strong>Pratiques d'équipe</strong> : conteneurisation avec Docker
+              et suivi du travail avec Jira.
+            </li>
+          </ul>
+
+          <ul class="tags">
+            <li>Spring Boot</li><li>Angular</li><li>Python</li><li>Flask</li>
+            <li>IA générative</li><li>MongoDB</li><li>Docker</li><li>Jira</li>
+          </ul>
+        </div>
+
+        <div class="gallery">
+          <img src="capture/Inveep/welcome-page.png" alt="InveepFood : page d'accueil" data-caption="InveepFood : page d'accueil" loading="lazy">
+          <img src="capture/Inveep/manager-table.png" alt="InveepFood : gestion des tables" data-caption="InveepFood : gestion des tables (manager)" loading="lazy">
+          <img src="capture/Inveep/client-interface.png" alt="InveepFood : interface client" data-caption="InveepFood : interface client" loading="lazy">
+          <img src="capture/Inveep/waiter-ordernew.png" alt="InveepFood : prise de commande" data-caption="InveepFood : prise de commande (serveur)" loading="lazy">
+        </div>
+      </article>
+
+      <!-- ======== SPEEDYGO ======== -->
+      <article class="project">
+        <div class="project-head">
+          <h3>SpeedyGo : plateforme intelligente de mobilité</h3>
+          <p class="role">Projet académique | ESPRIT | 2025</p>
+        </div>
+
+        <div class="project-body">
+          <p>
+            <strong>SpeedyGo</strong> centralise trois services de mobilité :
+            la <strong>livraison de colis</strong>, le <strong>transport</strong>
+            et le <strong>covoiturage</strong>, avec géolocalisation et suivi des
+            trajets en temps réel. Le projet est construit sur une
+            architecture microservices sécurisée.
+          </p>
+
+          <h4>Complexité technique</h4>
+          <ul class="points">
+            <li>
+              <strong>Architecture microservices</strong> : services Spring Boot
+              indépendants par domaine (colis, transport, covoiturage),
+              frontend Angular et services Flask pour la partie intelligente.
+            </li>
+            <li>
+              <strong>Sécurité et gestion des accès</strong> : authentification
+              et autorisation centralisées avec Keycloak, avec des interfaces
+              adaptées à chaque rôle (client, chauffeur).
+            </li>
+            <li>
+              <strong>Fonctionnalités intelligentes</strong> : optimisation des
+              itinéraires et des tarifs, et analyse automatisée des retours
+              utilisateurs pour améliorer la qualité du service.
+            </li>
+            <li>
+              <strong>Communication et suivi</strong> : géolocalisation, suivi des
+              trajets et messagerie entre utilisateurs.
+            </li>
+            <li>
+              <strong>Chaîne CI/CD</strong> : intégration continue avec Jenkins
+              et déploiement conteneurisé avec Docker.
+            </li>
+          </ul>
+
+          <ul class="tags">
+            <li>Spring Boot</li><li>Angular</li><li>Flask</li><li>MySQL</li>
+            <li>Keycloak</li><li>Microservices</li><li>Jenkins</li><li>Docker</li>
+          </ul>
+        </div>
+
+        <div class="gallery">
+          <img src="capture/speedygo/PARCEL_CAP.png" alt="SpeedyGo : gestion des colis" data-caption="SpeedyGo : gestion des colis" loading="lazy">
+          <img src="capture/speedygo/parcel_Dash.png" alt="SpeedyGo : tableau de bord colis" data-caption="SpeedyGo : tableau de bord des colis" loading="lazy">
+          <img src="capture/speedygo/driver-INTerface.png" alt="SpeedyGo : interface chauffeur" data-caption="SpeedyGo : interface chauffeur" loading="lazy">
+          <img src="capture/speedygo/chat_cap.png" alt="SpeedyGo : messagerie" data-caption="SpeedyGo : messagerie" loading="lazy">
+        </div>
+      </article>
+
     </section>
 
     <!-- CONTACT -->
     <section id="contact" class="section">
       <h2>Contact</h2>
       <p>Une opportunité, une question ou un projet ? Écrivons-nous.</p>
+      <ul class="contact-list">
+        <li><span>Email</span><a href="mailto:syrineklai804@gmail.com">syrineklai804@gmail.com</a></li>
+        <li><span>Téléphone</span><a href="tel:+21695859613">+216 95 859 613</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/syrine-klai-75547921b/" target="_blank" rel="noopener">linkedin.com/in/syrine-klai</a></li>
+        <li><span>GitHub</span><a href="https://github.com/syrineklai8" target="_blank" rel="noopener">github.com/syrineklai8</a></li>
+      </ul>
       <div class="cta">
-        <a class="btn primary" href="mailto:syrineklai804@gmail.com">Email</a>
+        <a class="btn primary" href="mailto:syrineklai804@gmail.com">M'écrire</a>
         <a class="btn" href="https://www.linkedin.com/in/syrine-klai-75547921b/" target="_blank" rel="noopener">LinkedIn</a>
-        <a class="btn" href="https://github.com/syrineklai8" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="CV_SYRINE_KLAI_2026.pdf" target="_blank" rel="noopener">Mon CV</a>
       </div>
     </section>
 
@@ -196,6 +323,65 @@
   <footer>
     <p>© 2026 Syrine Klai</p>
   </footer>
+
+  <!-- LIGHTBOX -->
+  <div id="lightbox" class="lightbox" aria-hidden="true">
+    <button class="lb-close" aria-label="Fermer">&times;</button>
+    <button class="lb-prev" aria-label="Précédente">&#8249;</button>
+    <figure>
+      <img src="" alt="">
+      <figcaption></figcaption>
+    </figure>
+    <button class="lb-next" aria-label="Suivante">&#8250;</button>
+  </div>
+
+  <script>
+    (function () {
+      var lb = document.getElementById('lightbox');
+      var lbImg = lb.querySelector('img');
+      var lbCap = lb.querySelector('figcaption');
+      var group = [];
+      var idx = 0;
+
+      function show(i) {
+        idx = (i + group.length) % group.length;
+        var el = group[idx];
+        lbImg.src = el.src;
+        lbImg.alt = el.alt;
+        lbCap.textContent = el.getAttribute('data-caption') || el.alt;
+      }
+      function open(imgs, i) {
+        group = imgs;
+        show(i);
+        lb.classList.add('open');
+        lb.setAttribute('aria-hidden', 'false');
+        document.body.style.overflow = 'hidden';
+      }
+      function close() {
+        lb.classList.remove('open');
+        lb.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
+      }
+
+      document.querySelectorAll('.gallery').forEach(function (g) {
+        var imgs = Array.prototype.slice.call(g.querySelectorAll('img'));
+        imgs.forEach(function (img, i) {
+          img.addEventListener('click', function () { open(imgs, i); });
+        });
+      });
+
+      lb.querySelector('.lb-close').addEventListener('click', close);
+      lb.querySelector('.lb-prev').addEventListener('click', function (e) { e.stopPropagation(); show(idx - 1); });
+      lb.querySelector('.lb-next').addEventListener('click', function (e) { e.stopPropagation(); show(idx + 1); });
+      lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+      document.addEventListener('keydown', function (e) {
+        if (!lb.classList.contains('open')) return;
+        if (e.key === 'Escape') close();
+        if (e.key === 'ArrowLeft') show(idx - 1);
+        if (e.key === 'ArrowRight') show(idx + 1);
+      });
+    })();
+  </script>
 
 </body>
 </html>
