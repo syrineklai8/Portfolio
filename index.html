@@ -5,22 +5,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Syrine Klai | Ingénieure en informatique, Génie logiciel & IA</title>
   <meta name="description" content="Portfolio de Syrine Klai, ingénieure en informatique junior spécialisée en génie logiciel et IA (AIOps, RAG, Machine Learning, full-stack).">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
+  <!-- HEADER -->
   <header class="nav">
-    <a href="#top" class="brand">
-      <span class="logo">Syrine Klai</span>
-      <span class="badge">Jeune ingénieure Software | AI</span>
-    </a>
-    <nav>
-      <a href="#about">À propos</a>
-      <a href="#education">Formation</a>
-      <a href="#projects">Projets</a>
-      <a href="#contact">Contact</a>
-      <a class="nav-cv" href="CV_SYRINE_KLAI_2026.pdf" target="_blank" rel="noopener">CV</a>
-    </nav>
+    <div class="nav-inner">
+      <a href="#top" class="brand">
+        <span class="mark">SK</span>
+        <span class="logo">Syrine Klai</span>
+        <span class="brand-sep"></span>
+        <span class="brand-role">Jeune ingénieure Software | AI</span>
+      </a>
+
+      <button class="menu-btn" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="menu">
+        <a href="#about">À propos</a>
+        <a href="#education">Formation</a>
+        <a href="#projects">Projets</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cv" href="CV_SYRINE_KLAI_2026.pdf" target="_blank" rel="noopener">CV</a>
+      </nav>
+    </div>
   </header>
 
   <main id="top">
@@ -113,47 +123,73 @@
     <!-- EDUCATION -->
     <section id="education" class="section">
       <h2>Formation</h2>
-      <div class="edu-grid">
 
-        <div class="timeline">
-          <div class="tl-item">
-            <p class="tl-date">2023 – 2026 | Tunis</p>
-            <h3>Diplôme national d'ingénieur en informatique, Génie logiciel</h3>
-            <p class="tl-school">ESPRIT, École Supérieure Privée d'Ingénierie et de Technologie</p>
-            <p class="tl-desc">
-              Formation d'ingénieur avec spécialisation en génie logiciel et
-              orientation intelligence artificielle : développement full-stack,
-              architectures microservices, Machine Learning, DevOps.
-            </p>
+      <div class="edu-cards">
+        <article class="edu-card">
+          <div class="edu-top">
+            <span class="edu-period">2023 – 2026</span>
+            <span class="edu-loc">Tunis</span>
           </div>
+          <h3>Diplôme national d'ingénieur en informatique</h3>
+          <p class="edu-spec">Spécialité Génie logiciel</p>
+          <p class="edu-school">ESPRIT, École Supérieure Privée d'Ingénierie et de Technologie</p>
+          <p class="edu-desc">
+            Formation d'ingénieur orientée génie logiciel et intelligence
+            artificielle, avec une pratique appliquée à travers stages et
+            projets d'équipe.
+          </p>
+          <ul class="tags">
+            <li>Full-stack</li><li>Microservices</li><li>Machine Learning</li><li>DevOps</li>
+          </ul>
+        </article>
 
-          <div class="tl-item">
-            <p class="tl-date">2021 – 2023 | Tunis</p>
-            <h3>Cycle préparatoire en Physique-Chimie</h3>
-            <p class="tl-school">Faculté des Sciences de Tunis</p>
-            <p class="tl-desc">
-              Socle scientifique en mathématiques, physique et chimie, avant
-              l'intégration du cycle ingénieur.
-            </p>
+        <article class="edu-card">
+          <div class="edu-top">
+            <span class="edu-period">2021 – 2023</span>
+            <span class="edu-loc">Tunis</span>
           </div>
+          <h3>Cycle préparatoire en Physique-Chimie</h3>
+          <p class="edu-spec">Classes préparatoires</p>
+          <p class="edu-school">Faculté des Sciences de Tunis</p>
+          <p class="edu-desc">
+            Socle scientifique en mathématiques, physique et chimie, avant
+            l'intégration du cycle ingénieur.
+          </p>
+          <ul class="tags">
+            <li>Mathématiques</li><li>Physique</li><li>Chimie</li>
+          </ul>
+        </article>
+      </div>
+
+      <div class="edu-extra">
+        <div class="panel">
+          <h3 class="panel-title">Certifications</h3>
+          <ul class="cert-list">
+            <li><span class="cert-name">NLP avec Transformers</span><span class="cert-issuer">NVIDIA</span></li>
+            <li><span class="cert-name">Détection d'anomalies</span><span class="cert-issuer">NVIDIA</span></li>
+            <li><span class="cert-name">Deep Learning et évaluation de LLM</span><span class="cert-issuer">NVIDIA</span></li>
+            <li><span class="cert-name">Scrum Fundamentals Certified</span><span class="cert-issuer">Agile</span></li>
+            <li><span class="cert-name">Apollo Graph Developer Associate</span><span class="cert-issuer">Apollo</span></li>
+          </ul>
         </div>
 
-        <aside class="edu-side">
-          <h3>Certifications</h3>
-          <ul class="checks">
-            <li><strong>NVIDIA</strong> : NLP avec Transformers, Détection d'anomalies, Deep Learning et évaluation de LLM</li>
-            <li><strong>Scrum Fundamentals Certified</strong></li>
-            <li><strong>Apollo Graph Developer Associate</strong></li>
+        <div class="panel">
+          <h3 class="panel-title">Langues</h3>
+          <ul class="lang-list">
+            <li>
+              <div><span class="lang-name">Arabe</span><span class="lang-level">Langue maternelle</span></div>
+              <span class="dots l5" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            </li>
+            <li>
+              <div><span class="lang-name">Français</span><span class="lang-level">Maîtrise professionnelle</span></div>
+              <span class="dots l4" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            </li>
+            <li>
+              <div><span class="lang-name">Anglais</span><span class="lang-level">Maîtrise professionnelle</span></div>
+              <span class="dots l4" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+            </li>
           </ul>
-
-          <h3 class="spaced">Langues</h3>
-          <ul class="langs">
-            <li><span>Arabe</span><em>Langue maternelle</em></li>
-            <li><span>Français</span><em>Maîtrise professionnelle</em></li>
-            <li><span>Anglais</span><em>Maîtrise professionnelle</em></li>
-          </ul>
-        </aside>
-
+        </div>
       </div>
     </section>
 
@@ -381,38 +417,25 @@
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-inner">
-      <div class="footer-brand">
-        <p class="footer-name">Syrine Klai</p>
-        <p class="footer-tag">Jeune ingénieure Software | AI</p>
-        <p class="footer-desc">
-          Génie logiciel, full-stack et intelligence artificielle. Basée à Tunis, Tunisie.
-        </p>
+      <div class="footer-id">
+        <span class="mark">SK</span>
+        <div>
+          <p class="footer-name">Syrine Klai</p>
+          <p class="footer-role">Jeune ingénieure Software | AI · Tunis, Tunisie</p>
+        </div>
       </div>
 
-      <div>
-        <h4>Navigation</h4>
-        <ul>
-          <li><a href="#about">À propos</a></li>
-          <li><a href="#education">Formation</a></li>
-          <li><a href="#projects">Projets</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h4>Me retrouver</h4>
-        <ul>
-          <li><a href="mailto:syrineklai804@gmail.com">Email</a></li>
-          <li><a href="https://www.linkedin.com/in/syrine-klai-75547921b/" target="_blank" rel="noopener">LinkedIn</a></li>
-          <li><a href="https://github.com/syrineklai8" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="CV_SYRINE_KLAI_2026.pdf" target="_blank" rel="noopener">Télécharger mon CV</a></li>
-        </ul>
-      </div>
+      <nav class="footer-links" aria-label="Liens">
+        <a href="https://www.linkedin.com/in/syrine-klai-75547921b/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/syrineklai8" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:syrineklai804@gmail.com">Email</a>
+        <a href="CV_SYRINE_KLAI_2026.pdf" target="_blank" rel="noopener">CV</a>
+      </nav>
     </div>
 
     <div class="footer-bottom">
-      <p>© 2026 Syrine Klai. Tous droits réservés.</p>
-      <a href="#top">↑ Retour en haut</a>
+      <p>© 2026 Syrine Klai</p>
+      <a href="#top">Retour en haut ↑</a>
     </div>
   </footer>
 
@@ -428,6 +451,23 @@
   </div>
 
   <script>
+    // Menu mobile
+    (function () {
+      var btn = document.querySelector('.menu-btn');
+      var menu = document.getElementById('menu');
+
+      function setOpen(open) {
+        menu.classList.toggle('open', open);
+        btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      }
+      btn.addEventListener('click', function () {
+        setOpen(!menu.classList.contains('open'));
+      });
+      menu.querySelectorAll('a').forEach(function (a) {
+        a.addEventListener('click', function () { setOpen(false); });
+      });
+    })();
+
     // Lightbox des captures d'écran
     (function () {
       var lb = document.getElementById('lightbox');
